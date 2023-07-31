@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mint Green Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: mintgreen;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      background-color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .emoji {
+      font-size: 40px;
+      margin-top: 20px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button id="loveButton">confess</button>
+    <div id="heartEmoji" class="emoji">i love you more than you know my love</div>
+  </div>
+
+  <script>
+    const loveButton = document.getElementById('loveButton');
+    const heartEmoji = document.getElementById('heartEmoji');
+
+    loveButton.addEventListener('click', () => {
+      document.body.style.backgroundColor = 'lavender';
+      heartEmoji.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
+
